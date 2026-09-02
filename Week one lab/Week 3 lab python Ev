@@ -1,0 +1,24 @@
+x=25
+y=4.5# you are able to do math with a float and integer
+print(x/y)
+
+
+x=23
+y=3.4
+print(x/y)
+# a string is text data 
+
+message= "I like apples and grapes"
+print(message)
+print(message[0])
+#lists can contain text or math data
+
+names=["Tom","john","mary","tim"]
+print(names)
+names.append("fred")
+# it prints everything in my list
+
+names.remove("Tom",)
+print(names)
+print(len(names))
+# I've learned hoe to use lists and number them.I've learned the diffrence between float and integers.I've learned the importance of strings and how to use them properly. I've also learned hoe to add to lists.

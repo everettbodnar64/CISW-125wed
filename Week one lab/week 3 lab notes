@@ -1,0 +1,42 @@
+a=10
+b=3
+c=a+b
+d=a/b
+
+#what is the difference between int and float?
+#Int is whole numbers
+#float had decimals
+
+x=15
+
+y=2.5 
+
+print(x,type(x))
+print(y,type(y))
+
+print(x//y) #// floor division,will give whole number value
+print(x/y) #/regular divison,this will give float (decimal) value
+
+user_text=input("Type something: ")
+print(f"Hello,{user_text}")
+
+age_text=input("What is your age:")
+age_int=int(age_text)
+print(age_int)
+
+
+word="Python"
+print(word[0])
+print(word[1])
+
+
+phrase="Hello,world"
+print(phrase.upper())
+
+
+fruits=["apple","banna","oranges"]
+numbers=[10,2,3.5]
+mixed=[100,"score",3.5]
+
+print(fruits[0])
+print(fruits[0:2])
