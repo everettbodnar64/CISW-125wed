@@ -1,0 +1,26 @@
+# project 1 of Project 0
+# For my first project of decided to do my own take on one the examples outlining a conversation between friends.
+Bestfriend= "Bob" # 3 examples of variables that are strings.
+Movie= "28 Days Later"
+Bestsnack= "Popcorn"
+print(f"Hey {Bestfriend}, do you want to watch {Movie} tonight?")
+print(f"Sure, but I need to grab some {Bestsnack} first.")
+print(f"No problem, I'll wait for you to get back.")
+print(f"Heck yeah dude I can't wait to watch {Movie}!")
+#Showing the variables in a string using f-strings.
+
+
+#Project 2 of Project 0
+#Project 2 of Project 0 is a simple calculator that takes two numbers and performs basic numbers put into variables and then performs addition, subtraction on them.
+
+a=345687
+b=29
+
+print(f"{a} + {b} = {a + b}")
+
+print(f"{a} - {b} = {a - b}")
+
+a=7
+b=3
+
+print(f"{a} + {b} = {a + b}")# showin an understanding of how python reads from top to bottom and how variables can be reassigned to new values.

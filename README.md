@@ -7,7 +7,7 @@ character="sebastian"
 #if you want number values do not put integer in betweem"""
 score=5
 
-#Variable names should describe whar they contain 
+#Variable names should describe what they contain 
 
 #bad examples of Variable names 
 X=50
