@@ -1,0 +1,44 @@
+# 1st I will make a grading system.
+answer=float(input("What is your current grade?"))
+if answer >= 90 :
+    print("You have an A")
+if answer == 80:
+    print("You have a B")
+if answer == 70:
+    print("You have a C")
+if answer == 60:
+    print("You have a D")
+if answer <= 50:
+    print("You have an F")
+
+
+# 2 next I will make a program that will  calculte discount based on the total price of an item.
+total=float(input("Enter your total order:"))
+if total >= 100:
+    print("You have a 10% discount")
+elif total >= 50:
+    print("You have a 5% discount")
+elif total >= 30:
+    print("You have a 0% discount")
+elif total < 250:
+    print("You have a 15% discount")
+else:
+    print("You have no discount")
+
+
+# 3 I will make a temperature converter that will convert Fahrenheit to Celsius but it can also convert Celsius to Fahrenheit.
+answer=input("Do you want to convert Fahrenheit to Celsius or Celsius to Fahrenheit? (F/C)")
+if answer == "F":
+    temp=float(input("Enter the temperature in Fahrenheit:"))
+    celsius=(temp-32)*5/9
+    print("The temperature in Celsius is:", celsius)
+elif answer == "C":
+    temp=float(input("Enter the temperature in Celsius:"))
+    fahrenheit=(temp*9/5)+32
+    print("The temperature in Fahrenheit is:", fahrenheit)
+else:
+    print("Invalid input. Please enter 'F' or 'C'.")
+
+temp=float(input("Enter the temperature in Celsius:"))
+fahrenheit=(temp*9/5)+32
+print("The temperature in Fahrenheit is:", fahrenheit)
