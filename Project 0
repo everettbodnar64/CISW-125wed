@@ -23,4 +23,4 @@ print(f"{a} - {b} = {a - b}")
 a=7
 b=3
 
-print(f"{a} + {b} = {a + b}")# showin an understanding of how python reads from top to bottom and how variables can be reassigned to new values.
+print(f"{a} + {b} = {a + b}")# showing an understanding of how python reads from top to bottom and how variables can be reassigned to new values.
