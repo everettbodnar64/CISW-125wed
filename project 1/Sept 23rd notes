@@ -1,0 +1,18 @@
+signal_color=input("Enter the color of the light")
+is_blinking=input("Is the light blinking? (yes or no)")
+if signal_color=='red':
+    if is_blinking=='yes':
+        print("This is a 4 way stop basically")
+    else:
+        print("Stop")
+
+
+#Login program
+username=input("What is your username:")
+password=input("What is your password:")
+if username=="admin" and password=="password123":
+    print("Welcome admin!")
+else:
+    print("Invalid username or password.")
+
+#This program gives a discount based on total amount spent.
