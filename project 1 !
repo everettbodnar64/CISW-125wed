@@ -1,0 +1,28 @@
+# Intro to Programming
+# Debug Exercise 2
+# project 1
+
+total = 0
+num1 = input("What's the first number? >")
+total += float(num1) 
+num2 = input("What's the second number? >")
+total += float(num2)
+num3 = input("What's the third number? >")
+total += float(num3)
+print(f"Total is: {total}") # Float was all that was missing from program.
+
+#Now I am going to make the 1st example program that counts the number of letters in someones n first and last name and what there intials are.
+name = input("What's your name? >")
+letter_count = len(name)
+print(f"Your name has {letter_count} letters.") 
+name_parts = name.split()
+if len(name_parts) >= 2:
+    print(f"Your initials are: {name_parts[0][0]}{name_parts[-1][0]}")
+initials = name.split()
+
+
+#Now I will make the 2nd example program that will calculte how much money you can spend on vaction based on your budget and how many days you will be gone.
+budget = float(input("What is your budget for your vacation? >"))
+days = int(input("How many days will you be gone? >"))
+daily_spend = budget / days
+print(f"You can spend ${daily_spend:.2f} per day.")
