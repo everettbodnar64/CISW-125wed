@@ -22,4 +22,21 @@ for number in range (1, 11):
 square = number * number
 print(square)
 
-#
+#Now I will write a loop that will print each letter in a string.
+name = "Everett"
+for letter in name:
+    print(letter)
+
+    # I will control a loop now with a break statement. I will make a loop that will count to 10 but will stop at 5.
+    for number in range(1, 11):
+        if number == 5:
+            break
+        print(number)
+
+     #For my final loop I will make nested loop.
+
+for outer_number in range(1, 8):
+    for inner_number in range(1, 8):
+        #Print the outer and inner number
+        print("Outer:", outer_number, "Inner:", inner_number)
+# its basically a loop inside of a loop. The outer loop will run 7 times, and for each time the outer loop runs, the inner loop will run 7 times. So in total, the inner loop will run 49 times (7 * 7 = 49).
