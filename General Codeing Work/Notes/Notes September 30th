@@ -1,0 +1,118 @@
+#What is a loop?
+#A loop repeats code
+
+#Repeat this loop 3 times
+from numbers import Number
+
+
+for number in range(3):
+    #Print hello each time the loop runs
+    print("Hello")
+
+
+    #While loops
+    #A while loop continues to run as long as a certain condition is TRUE.
+
+#Make a program that is going to print 1-5
+
+#Create a variable starting number is less than or equal to 5
+number = 1
+while number <= 5:#This is essentially, where the loop will stop
+    #Print the number
+    print(number)
+    #Add 1 to the number each time the loop runs
+    number += 1 #Add 1 to number after each loop
+#I want to start counting at 0, count to 50, and get there by increments of 5
+number = 0
+while number <= 50:
+    print(number)
+    number += 5
+
+
+    #A while loop is useful when you want to keep asking until the user until they give a vaild answer
+    #ask the user for their age
+    age=int(input("Enter your age:"))
+
+    #Keep asking until the user gives a valid answer
+    while age < 1 or age > 120:
+        print("That is not a valid age. Please try again.")
+        age=int(input("Enter your age:"))
+
+        #This runs after loop finishes      
+    print("Thank you.")
+
+    #FOR LOOP
+    #A FOR LOOP works thourgh items one at a time.
+
+    #create a list containg 3 games
+games = ["Minecraft", "Mario", "Zelda"]
+#Take one item from the games list at a time    
+for game in games:
+    #Print the game
+    print(game)
+
+    #Range
+    #Range () creates a sequence of numbers
+    #Starts at 2 and stops right before 8
+    for number in range(2, 8): 
+        #(starting number, stopping number)
+        #print the current number
+        print(number)
+        #remdember:The ending number is not included in the range, so it will print 2,3,4,5,6,7
+
+
+        #We can also perfrom calculations inside a loop:
+        #Loop through numbers 2 through 7
+        for number in range(2, 8):
+            #Multiply the number by itself
+            square = number * number
+            #Print the result
+            print(square)
+
+            #Looping through a string
+            #store a name inside of a string
+name = "Obama"
+#Loop through each letter in the name
+for letter in name:
+    #Print the letter
+    print(letter)
+    #This works very similarly to how we loop through a list.
+
+#USEING BREAK
+#BREAK stops a loop early
+
+#Loop through numbers 1-10
+for number in range(1, 11):
+    #If the number is 5, stop the loop
+     #Print the number
+    print(number)
+    if number == 5:
+        break
+
+
+   #Nested loops
+   #A nested loop is a loop inside of another loop
+
+   #Outer Loop runs thorugh 1,2,3
+for outer_number in range(1, 4):
+    #Inner loop runs through 1,2,3
+    for inner_number in range(1, 4):
+        #Print the outer and inner number
+        print("Outer:", outer_number, "Inner:", inner_number)
+
+
+        #CHOOSING the right Loop?
+        #Use a while Loop while answer is not yes
+        while answer != "yes":
+            answer = input("Do you want to continue? (yes/no): ")
+
+            #Use a for loop when you know how many times you want to repeat the code
+            #Go through a list of items
+            items = ["apple", "banana", "cherry"]
+            for item in items:
+                print(item)
+
+                #Use for with RANGE () when working through numbers 
+                #Loop through numbers 1-10
+                for number in range(1, 11):
+                    print(number)
