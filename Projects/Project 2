@@ -1,0 +1,38 @@
+# Debug Exercise 2
+user_val = int(input("Enter a whole number. >"))
+if 5 < user_val < 10:
+    print(f"{user_val} is less than 10, but greater than 5.")
+else:
+    print(f"{user_val} falls outside the bounds we're looking for.")
+# First I will make a calculator using if then statements.
+Num1 = float(input("Enter the first number: "))
+Num2 = float(input("Enter the second number: "))
+Operation = input("Enter the operation (+, -, *, /): ")
+
+if Operation == "+":
+    Result = Num1 + Num2
+    print(f"{Num1} + {Num2} = {Result}")
+elif Operation == "-":
+    Result = Num1 - Num2
+    print(f"{Num1} - {Num2} = {Result}")
+elif Operation == "*":
+    Result = Num1 * Num2
+    print(f"{Num1} * {Num2} = {Result}")
+elif Operation == "/":
+    if Num2 != 0:
+        Result = Num1 / Num2
+        print(f"{Num1} / {Num2} = {Result}")
+    else:
+        print("Error: Division by zero is not allowed.")
+else:
+    print("Error: Invalid operation.")
+  #Now I will make a credit score evaluator using if then statements.
+Inc = float(input("Enter your income: "))
+Credit_Score = int(input("Enter your credit score: "))
+
+if Credit_Score >= 700:
+    print("You have great credit.")
+elif Credit_Score >= 600:
+    print("You have good credit.")
+else:
+    print("You have poor credit.")
