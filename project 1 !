@@ -11,7 +11,7 @@ num3 = input("What's the third number? >")
 total += float(num3)
 print(f"Total is: {total}") # Float was all that was missing from program.
 
-#Now I am going to make the 1st example program that counts the number of letters in someones n first and last name and what there intials are.
+#Now I am going to make the 1st example program that counts the number of letters in someones first and last name and what there intials are.
 name = input("What's your name? >")
 letter_count = len(name)
 print(f"Your name has {letter_count} letters.") 
