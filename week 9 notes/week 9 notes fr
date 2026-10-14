@@ -1,0 +1,43 @@
+#Learn how to write,read and edit files using python
+#Common modes when using Files 
+
+# "r" read only
+#You can read this file but not change it
+#Error if file doesnt exist
+
+#"w"= write
+#Create the file if it doesnt exist
+#Overwrites the file if it does exist (deletes old content)
+
+#"a'=append
+#Creates the file if it doesn't exit
+#Adds new text to the file , does not delete existing content
+
+#with open("filename","mode")
+with open ("week 9 notes/stuff.txt","r")as file:
+    content=file.read()
+    print(content)
+
+#I want to completely overwrite the file with new content
+#with open("week 9 notes/stuff.txt","w") as file:
+   # file.write("This is the new content of the file.\n")
+   # file.write("It will overwrite any existing content.\n")
+
+#Once we leave the identation block, the file is automatically closed
+
+#Reading from a file
+#Method A:read the whole file at once
+with open("week 9 notes/stuff.txt","r") as file:
+    content=file.read()
+    print(content)
+
+    #method B: read the file line by line
+with open("week 9 notes/stuff.txt","r") as file:
+    for line in file:
+        print(line.strip())  #strip() removes leading/trailing whitespace
+
+        #Appending to a file
+with open("week 9 notes/stuff.txt","a") as file:
+    file.write("This is an appended line.\n")
+    file.write("This line will be added to the end of the file.\n")
+    #We use R mode to make sure a file exists before we append to it. If the file doesn't exist, we can create it first using W mode.
