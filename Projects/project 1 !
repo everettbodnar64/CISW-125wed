@@ -26,3 +26,9 @@ budget = float(input("What is your budget for your vacation? >"))
 days = int(input("How many days will you be gone? >"))
 daily_spend = budget / days
 print(f"You can spend ${daily_spend:.2f} per day.")
+#Now I send all all of the user input to a file called vacation.txt and then read the file and print it to the screen.
+with open("vacation.txt", "w") as file:
+    file.write(f"Budget: ${budget:.2f}\n")
+    file.write(f"Days: {days}\n")
+    file.write(f"Daily Spend: ${daily_spend:.2f}\n")
+    

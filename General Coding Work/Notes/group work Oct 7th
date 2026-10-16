@@ -1,0 +1,48 @@
+#countdown Timer
+from random import random
+
+
+seconds=int(input("Enter the time in seconds: "))
+while seconds>0:
+    if seconds==0:
+        print("Almost there!")
+    elif seconds==0:
+        print("Time's up!")
+    else:
+        print(seconds)
+    seconds-=1
+
+    #Bank Program
+balance=1000
+while True:
+    print(f"{balance},Balance")
+    Choice=input("What would you like to do? (deposit, withdraw, exit): ").lower()
+    if Choice=="deposit":
+        amount=float(input("How much would you like to deposit?"))
+        balance+=amount
+    elif Choice=="withdraw":
+        amount=float(input("How much would you like to withdraw?"))
+        if amount <= balance:
+            balance-=amount
+        else:
+            print("Insufficient funds.")
+    elif Choice=="exit":
+        break
+    else:
+        print("Invalid choice.")
+
+        #Random Number Generator
+print("Guess the number:")
+target = 4
+guess = int(input("Enter your guess: "))
+if guess == target:
+    print("You guessed it!")
+
+##create a grocery list
+#make an empty list
+grocery_list=[]
+while True:
+    item=input("Enter an item to add to the grocery list (or type 'done' to finish): ")
+    if item.lower() == 'done':
+        break
+    grocery_list.append(item)

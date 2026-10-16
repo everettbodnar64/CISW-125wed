@@ -1,0 +1,13 @@
+#Read mode useing a for loop
+with open("Files lab/Files.txt","r") as file:
+    for line in file:
+        print(line.strip())  
+    
+    #Append Mode
+with open("Files lab/Files.txt","a") as file:
+    file.write("This my first new line.\n")
+    file.write("This is my second new line.\n")
+
+    with open("Files lab/Files.txt ","r") as file:
+        for line in file:
+            print(line.strip())
