@@ -1,0 +1,55 @@
+# Intro to Programming
+# Debug Exercise 3
+while True:
+    # This loop should output numbers from 1 through 10.
+    print("Counting up: ", end=" ")
+    for count in range(1, 11):
+        print(count, end=" ")
+    print("") # this is just an easy way to make a new-line and makes it much more readable
+    choice = input("Should I print them again? (y/n)")
+    if choice.lower() == 'n':
+        break
+    
+    
+    #Now I will make a loop to find the mean of a list of groceries.
+    groceries = []
+    while True:
+        item = input("Enter a grocery item (or type 'done' to finish): ")
+        if item.lower() == 'done':
+            break
+        groceries.append(item)
+    total = 0
+    for item in groceries:
+        total += len(item)
+    if len(groceries) > 0:
+        mean = total / len(groceries)
+        print(f"The mean length of the grocery items is: {mean}")
+    else:
+        print("No grocery items were entered.")
+
+#Now I will write a minamly functional program to play rock paper scissors with the user. I will use a while loop to keep the game going until the user wants to stop.
+import random
+
+while True:
+    user_choice = input("Enter your choice (rock, paper, scissors): ").lower()
+    if user_choice not in ["rock", "paper", "scissors"]:
+        print("Invalid choice. Please try again.")
+        continue
+
+    computer_choice = random.choice(["rock", "paper", "scissors"])
+
+    print(f"You chose {user_choice}.")
+    print(f"The computer chose {computer_choice}.")
+
+    if user_choice == computer_choice:
+        print("It's a tie!")
+    elif (user_choice == "rock" and computer_choice == "scissors") or \
+         (user_choice == "paper" and computer_choice == "rock") or \
+         (user_choice == "scissors" and computer_choice == "paper"):
+        print("You win!")
+    else:
+        print("Computer wins!")
+
+    play_again = input("Do you want to play again? (y/n): ").lower()
+    if play_again != "y":
+        break
