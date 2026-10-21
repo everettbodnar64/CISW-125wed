@@ -1,0 +1,92 @@
+#Week 10 function Notes
+#Functions is a named set of instructions you can call to perform a specific task. Functions are used to break down complex problems into smaller, manageable parts.
+#Functions let us write code once and use it multiple times. Functions can take inputs, called parameters, and can return outputs.
+
+#Define a function:Create a function in python using def
+#Call a function: running a function by using its name followed by parentheses
+#parameters: values that are passed into a function when it is called
+#arguments: the actual values that are passed into a function when it is called
+
+
+#Define (Create) a function 
+def say_hello():
+    print("Hello")
+
+    #Call the function
+say_hello()  # Output: Hello
+
+
+#Arguments and Parameters
+#function that is going to greet me by name
+def greet(name):
+    print(f"Hello, {name}!")
+
+greet("Everett")  # Output: Hello, Everett!
+
+#Why are function useful?
+#Functions are useful because they allow us to organize our code into reusable blocks. This makes our code easier to read, maintain, and debug. Functions also help us avoid code duplication by allowing us to call the same function multiple times with different inputs.
+#Breaking down complex problems into smaller, manageable parts is another benefit of using functions. By dividing our code into functions, we can focus on one specific task at a time, making it easier to understand and solve problems.
+
+
+print(welcome)
+print("Pick an option:")
+print("Goodbye")
+
+def show_menu():
+    print("Welcome to the program!")
+    print("Pick an option:")
+    print("1. Say Hello")
+    print("2. Say Goodbye")
+
+    #Print vs return
+    #A function that Prints 
+    def hello_world():
+        print("Hello, World!")
+    #This shows the text to the user
+    #But it does't a value back to the rest of the program
+
+    #A function that Returns
+    def hello():
+        return "Hello, World!"
+    #This returns a value back to the rest of the program
+    #The caller can store it,use it, or print it as needed
+    #Print is for the user
+    #Return is for the program
+
+    msg=hello()
+    print(msg)  # Output: Hello, World!
+
+    result = hello()  # Store the returned value in a variable
+    print(result)  # Output: Hello, World!
+
+    #Calc function that takes two numbers as parameters and will have if/elif based on the operator passed in as a parameter. The function will return the result of the calculation.
+    def calculate(num1, num2, operator):
+        if operator == "+":
+            return num1 + num2
+        elif operator == "-":
+            return num1 - num2
+        elif operator == "*":
+            return num1 * num2
+        elif operator == "/":
+            if num2 != 0:
+                return num1 / num2
+            else:
+                return "Error: Division by zero"
+        else:
+            return "Error: Invalid operator"
+
+        #Fake loop,Fuction will run until the user chooses to exit
+        #A function can call itself, which is known as recursion. Recursion can be useful for solving certain problems, but it can also lead to infinite loops if not implemented correctly. In this case, we will use a loop to repeatedly call the calculate function until the user chooses to exit.
+        #Behaves like a loop, but it is not a loop. It is a function that calls itself until a certain condition is met. This can be useful for solving problems that have a recursive structure, such as traversing a tree or calculating factorials.
+
+        def play_again():
+            #user to be promted to play again
+            question=input("Do you want to play again? (y/n): " \
+            "").lower()
+            if question == "y":
+                main()
+            elif question == "n":
+                print("Thanks for playing!")
+            else:
+                print("Invalid input. Please enter 'y' or 'n'.")
+                play_again()  # Call the function again for valid input

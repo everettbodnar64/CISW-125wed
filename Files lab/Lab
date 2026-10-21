@@ -1,13 +1,14 @@
-#Read mode useing a for loop
+#Read mode useing a for loop # task one
 with open("Files lab/Files.txt","r") as file:
     for line in file:
         print(line.strip())  
     
-    #Append Mode
+    #Append Mode task two
 with open("Files lab/Files.txt","a") as file:
     file.write("This my first new line.\n")
     file.write("This is my second new line.\n")
-
+#Task 3
     with open("Files lab/Files.txt ","r") as file:
         for line in file:
             print(line.strip())
+            # I put the challange work at the end my project one file.
