@@ -1,0 +1,47 @@
+#Lists: Storing multiple values in a single variable
+favgames=["Halo","mario Kart","Eldon Ring"]
+
+#Index a list ?
+# Indexing a list just means to target a specific value in the list. You can do this by using the index number of the value you want to target. The first value in a list has an index of 0, the second value has an index of 1, and so on.
+print(favgames[0]) #This will print "Halo"
+print(favgames[1]) #This will print "mario Kart"
+print(favgames[2]) #This will print "Eldon Ring"
+
+#Using Len() to find the length of a list
+#The len() function is used to find the length of a list. It will return the
+#print(len(favgames)) #This will print 3 because there are 3 values in the list
+
+#adding items to a list
+#append() method is used to add an item to the end of a list
+#favgames.append("Minecraft")
+#print(favgames) #This will print the updated list with "Minecraft" added at the end
+
+#Inserting items into a list
+#insert() method is used to add an item at a specific index in a list
+#favgames.insert(1, "Fortnite") #This will insert "Fortnite" at index 1
+#print(favgames) #This will print the updated list with "Fortnite" inserted at index 1
+
+#Common list methods
+#remove() method is used to remove an item from a list
+#Count() method is used to count the number of occurrences of an item in a list
+#print(favgames.count("Halo")) #This will print 1 because "Halo" occurs once in the list
+
+#Sort() method is used to sort the items in a list in ascending order
+#favgames.sort()
+#print(favgames) #This will print the updated list with items sorted in ascending order
+
+#Reverse() method is used to reverse the order of items in a list
+#favgames.reverse()
+#print(favgames) #This will print the updated list with items in reverse order
+
+#Dictionaries: Storing data in key-value pairs
+#A dictionary is a collection of key-value pairs. Each key is unique and is used to access the corresponding value.
+#Dictionaries are defined using curly braces {} and key-value pairs are separated by a colon :.
+
+#Make a dictionary that is called player_stats and has the following key-value pairs:
+player_stats = {
+    #Dictionary values must be health, mana, and stamina. The values for each key should be a number between 0 and 100.
+    "health": 100, 
+    "mana": 50,
+    "stamina": 75
+}
