@@ -1,0 +1,65 @@
+#Lists and Dictionaries Lab
+#Lists
+#1.	Create a list that represents a shopping cart.
+#2.	Print the cart length using len().
+#3.	Print specific cart items using indexing.
+#4.	Add a new item to the cart using append().
+#5.	Insert a new item at a specific position using insert(). The syntax for insert is below
+cartlist = ["Apples", "Bananas", "Oranges", "Ground Beef", "Milk", "Chips"]
+print(len(cartlist)) 
+print(cartlist[0]) 
+print(cartlist[1]) 
+print(cartlist[2]) 
+print(cartlist[3]) 
+print(cartlist[4]) 
+print(cartlist[5]) 
+cartlist.append("Eggs")
+cartlist.insert(2, "Bread")
+print(cartlist)
+print(cartlist.count("Apples"))
+cartlist = ["Apples", "Bananas", "Oranges", "Ground Beef", "Milk", "Chips"]
+cartlist.sort()
+print(cartlist)
+remove_item = "Ground Beef"
+if remove_item in cartlist:
+    cartlist.remove(remove_item)
+print(cartlist)
+reverse_cart = cartlist[::-1]
+print(reverse_cart)
+
+#Dictionaries
+#1.	Create an inventory dictionary (e.g., {"Apples": 10, "Bananas": 15, "Oranges": 8}).
+#   Give the dictionary at least 5 entries.
+#2.	Print a specific item’s stock level using its key.
+#3.	Add new stock to the inventory (e.g., add "Grapes").
+#4.	Update existing stock quantities (e.g., increase "Apples" by 5).
+#5.	Use the .keys() method to retrieve all keys from your dictionary.
+#6.	Use the .values() method to retrieve all values from your dictionary.
+
+inventory = {"Apples": 10, "Bananas": 15, "Oranges": 8, "Grapes": 12, "Strawberries": 20}
+print(inventory["Apples"])
+inventory["Grapes"] = 12
+inventory["Apples"] += 5
+print(inventory.keys())
+print(inventory.values())
+keys = inventory.keys()
+values = inventory.values()
+for key in keys:
+    print(key)
+    for value in values:
+        print (value)
+for key, value in inventory.items():
+    print(key, value)
+
+    #Nested Dictionaries
+#Create a dictionary that represents customers, where each key is a customer ID, and the value is another dictionary containing details like {"Name": "John Doe", "Items Bought": ["Apples", "Oranges"], "Total Spent": 23.50}.
+#Access specific details using multiple keys (e.g., customers["001"]["Name"]).
+customers = {
+    "001": {"Name": "John Doe", "Items Bought": ["Apples", "Oranges"], "Total Spent": 23.50},
+    "002": {"Name": "Jane Doe", "Items Bought": ["Bananas", "Grapes"], "Total Spent": 15.75},
+    "003": {"Name": "Alice Johnson", "Items Bought": ["Strawberries", "Milk"], "Total Spent": 30.00}
+}
+
+
+#Conclusion
+#I learned How to properly use both lists and dictionaries. This has help give me some ideas on my final project and how I use both of these tools to my advantage.Especually how useful nested dictionaries can be in future work. I'm looking forward to experimeting with these tools in my final project and seeing how I can use them to make my code more efficient and organized.

@@ -45,3 +45,77 @@ player_stats = {
     "mana": 50,
     "stamina": 75
 }
+
+#Lists VS Dictionaries
+#Lists are ordered collections of items, while dictionaries are unordered collections of key-value pairs. Lists are accessed using index numbers, while dictionaries are accessed using keys. Lists can contain duplicate values, while dictionary keys must be unique.
+#Dictionaries are useful when you want to associate specific values with unique keys, while lists are useful when you want to store a collection of items in a specific order.
+
+
+#Accessing dictionary values
+#print(player_stats["health"]) #This will print 100
+
+
+#Add and update dictionary values ?
+#You can add a new key-value pair to a dictionary by using the assignment operator =. You can also update the value of an existing key by assigning a new value to it.
+#You can add a new key-value pair to the player_stats dictionary like this:
+player_stats["gold"] = 1000
+player_stats["health"] = 90 #This will update the value of the "health" key to 90
+player_stats["mana"] = 75 #This will update the value of the "mana" key to 75
+print(player_stats) #This will print the updated dictionary with the new key-value pair and updated values for existing keys
+
+#Keys() and Values() methods
+#The keys() method returns a view object that displays a list of all the keys in the dictionary. The values() method returns a view object that displays a list of all the values in the dictionary.
+print(player_stats.keys()) #This will print a list of all the keys in the player_stats dictionary
+print(player_stats.values()) #This will print a list of all the values in the player_stats dictionary
+# The values() method can also be used to get the value of a specific key in the dictionary. For example, to get the value of the "health" key, you can use player_stats["health"].
+
+#How we can loop through a dictionary
+#You can loop through a dictionary using a for loop. You can loop through the keys, the values, or both the keys and values of the dictionary. Here are some examples:
+#Looping through the keys of the dictionary
+for key in player_stats:
+    print(key) #This will print each key in the player_stats dictionary
+
+#Looping through the values of the dictionary
+for value in player_stats.values():
+    print(value) #This will print each value in the player_stats dictionary
+
+#Looping through both keys and values of the dictionary
+for key, value in player_stats.items():
+    print(key, value) #This will print each key-value pair in the player_stats dictionary
+
+    #Nested Dictionaries
+#A nested dictionary is a dictionary that contains another dictionary as a value. You can access the values of a nested dictionary by using multiple keys. Here is an example of a nested dictionary:
+player_stats = {
+    
+    "player1": {
+        "health": 100,
+        "mana": 50,
+        "stamina": 75
+    },
+    "player2": {
+        "health": 90,
+        "mana": 75,
+        "stamina": 80
+    }
+}
+#Accessing values in a nested dictionary
+print(player_stats["player1"]["health"]) #This will print 100
+print(player_stats["player2"]["mana"]) #This will print 75
+print(player_stats["player1"]["stamina"]) #This will print 75
+print(player_stats["player2"]["stamina"]) #This will print 80`
+
+#Nested structures can mix lists and dictionaries. For example, you can have a list of dictionaries or a dictionary that contains lists as values. Here is an example of a list of dictionaries:
+players = [
+    {
+        "name": "player1",
+        "health": 100,
+        "mana": 50,
+        "stamina": 75
+    },
+    {
+        "name": "player2",
+        "health": 90,
+        "mana": 75,
+        "stamina": 80
+    }
+]
