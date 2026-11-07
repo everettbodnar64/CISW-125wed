@@ -1,0 +1,4 @@
+Grocery List:
+food
+
+Mean length of grocery items: 4.0
