@@ -1,0 +1,121 @@
+#Lists: Storing multiple values in a single variable
+favgames=["Halo","mario Kart","Eldon Ring"]
+
+#Index a list ?
+# Indexing a list just means to target a specific value in the list. You can do this by using the index number of the value you want to target. The first value in a list has an index of 0, the second value has an index of 1, and so on.
+print(favgames[0]) #This will print "Halo"
+print(favgames[1]) #This will print "mario Kart"
+print(favgames[2]) #This will print "Eldon Ring"
+
+#Using Len() to find the length of a list
+#The len() function is used to find the length of a list. It will return the
+#print(len(favgames)) #This will print 3 because there are 3 values in the list
+
+#adding items to a list
+#append() method is used to add an item to the end of a list
+#favgames.append("Minecraft")
+#print(favgames) #This will print the updated list with "Minecraft" added at the end
+
+#Inserting items into a list
+#insert() method is used to add an item at a specific index in a list
+#favgames.insert(1, "Fortnite") #This will insert "Fortnite" at index 1
+#print(favgames) #This will print the updated list with "Fortnite" inserted at index 1
+
+#Common list methods
+#remove() method is used to remove an item from a list
+#Count() method is used to count the number of occurrences of an item in a list
+#print(favgames.count("Halo")) #This will print 1 because "Halo" occurs once in the list
+
+#Sort() method is used to sort the items in a list in ascending order
+#favgames.sort()
+#print(favgames) #This will print the updated list with items sorted in ascending order
+
+#Reverse() method is used to reverse the order of items in a list
+#favgames.reverse()
+#print(favgames) #This will print the updated list with items in reverse order
+
+#Dictionaries: Storing data in key-value pairs
+#A dictionary is a collection of key-value pairs. Each key is unique and is used to access the corresponding value.
+#Dictionaries are defined using curly braces {} and key-value pairs are separated by a colon :.
+
+#Make a dictionary that is called player_stats and has the following key-value pairs:
+player_stats = {
+    #Dictionary values must be health, mana, and stamina. The values for each key should be a number between 0 and 100.
+    "health": 100, 
+    "mana": 50,
+    "stamina": 75
+}
+
+#Lists VS Dictionaries
+#Lists are ordered collections of items, while dictionaries are unordered collections of key-value pairs. Lists are accessed using index numbers, while dictionaries are accessed using keys. Lists can contain duplicate values, while dictionary keys must be unique.
+#Dictionaries are useful when you want to associate specific values with unique keys, while lists are useful when you want to store a collection of items in a specific order.
+
+
+#Accessing dictionary values
+#print(player_stats["health"]) #This will print 100
+
+
+#Add and update dictionary values ?
+#You can add a new key-value pair to a dictionary by using the assignment operator =. You can also update the value of an existing key by assigning a new value to it.
+#You can add a new key-value pair to the player_stats dictionary like this:
+player_stats["gold"] = 1000
+player_stats["health"] = 90 #This will update the value of the "health" key to 90
+player_stats["mana"] = 75 #This will update the value of the "mana" key to 75
+print(player_stats) #This will print the updated dictionary with the new key-value pair and updated values for existing keys
+
+#Keys() and Values() methods
+#The keys() method returns a view object that displays a list of all the keys in the dictionary. The values() method returns a view object that displays a list of all the values in the dictionary.
+print(player_stats.keys()) #This will print a list of all the keys in the player_stats dictionary
+print(player_stats.values()) #This will print a list of all the values in the player_stats dictionary
+# The values() method can also be used to get the value of a specific key in the dictionary. For example, to get the value of the "health" key, you can use player_stats["health"].
+
+#How we can loop through a dictionary
+#You can loop through a dictionary using a for loop. You can loop through the keys, the values, or both the keys and values of the dictionary. Here are some examples:
+#Looping through the keys of the dictionary
+for key in player_stats:
+    print(key) #This will print each key in the player_stats dictionary
+
+#Looping through the values of the dictionary
+for value in player_stats.values():
+    print(value) #This will print each value in the player_stats dictionary
+
+#Looping through both keys and values of the dictionary
+for key, value in player_stats.items():
+    print(key, value) #This will print each key-value pair in the player_stats dictionary
+
+    #Nested Dictionaries
+#A nested dictionary is a dictionary that contains another dictionary as a value. You can access the values of a nested dictionary by using multiple keys. Here is an example of a nested dictionary:
+player_stats = {
+    
+    "player1": {
+        "health": 100,
+        "mana": 50,
+        "stamina": 75
+    },
+    "player2": {
+        "health": 90,
+        "mana": 75,
+        "stamina": 80
+    }
+}
+#Accessing values in a nested dictionary
+print(player_stats["player1"]["health"]) #This will print 100
+print(player_stats["player2"]["mana"]) #This will print 75
+print(player_stats["player1"]["stamina"]) #This will print 75
+print(player_stats["player2"]["stamina"]) #This will print 80`
+
+#Nested structures can mix lists and dictionaries. For example, you can have a list of dictionaries or a dictionary that contains lists as values. Here is an example of a list of dictionaries:
+players = [
+    {
+        "name": "player1",
+        "health": 100,
+        "mana": 50,
+        "stamina": 75
+    },
+    {
+        "name": "player2",
+        "health": 90,
+        "mana": 75,
+        "stamina": 80
+    }
+]

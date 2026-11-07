@@ -1,0 +1,46 @@
+#Task 1
+def greet_user(name):
+    print(f"Hello, {name}! Nice to meet you.")
+
+greet_user("Bob")  # Output: Hello, Bob! Nice to meet you.
+greet_user("Mary")  # Output: Hello, Mary! Nice to meet you.
+
+#Task2
+def function_calc(num1, num2):
+    operator = input("Enter an operation (+, -, *, /): ")
+    if operator == "+":
+        return num1 + num2
+    elif operator == "-":
+        return num1 - num2
+    elif operator == "*":
+        return num1 * num2
+    elif operator == "/":
+        if num2 != 0:
+            return num1 / num2
+        else:
+            return "Error: Division by zero"
+    else:
+        return "Invalid operator"
+
+#Task 3
+def get_length(s):
+    return len(s)
+
+result = get_length("Hello, Folks!")
+print(result)
+
+#Task 4
+def print_numbers():
+    while True:
+        for i in range(1, 11):
+            print(i)
+        choice = input("Do you want to continue? (yes/no): ")
+        if choice.lower() != "yes":
+            break
+
+print_numbers()
+
+#Task 5
+#Over all pretty useful an mostly easy to use and I hope it helps clean up my code as a continue to lean to code.
+#I do feel conmfortable using functions.
+#I got nothing for you questions wise sir.
