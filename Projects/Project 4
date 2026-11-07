@@ -19,6 +19,8 @@ if __name__ == "__main__":
             output_file.write(box_me_in(user_input))
         print("A copy of your output is in boxmein.txt")
 
+
+
         # Updated program from project 3
 
         groceries = []
@@ -38,7 +40,7 @@ if len(groceries) > 0:
     mean = total / len(groceries)
     print(f"The mean length of the grocery items is: {mean}")
 
-    # Write grocery items to a new file
+
     with open("groceries.txt", "w") as file:
         file.write("Grocery List:\n")
 
@@ -57,7 +59,7 @@ else:
 
 import random
 
-# Create a new file to save game history
+
 with open("game_history.txt", "w") as file:
 
     while True:
@@ -72,7 +74,7 @@ with open("game_history.txt", "w") as file:
         print(f"You chose {user_choice}.")
         print(f"The computer chose {computer_choice}.")
 
-        # Save both moves to the file
+        
         file.write(f"You chose: {user_choice}\n")
         file.write(f"Computer chose: {computer_choice}\n")
 
@@ -89,7 +91,7 @@ with open("game_history.txt", "w") as file:
 
         print(result)
 
-        # Save the result
+        
         file.write(f"Result: {result}\n")
         file.write("----------------------\n")
 

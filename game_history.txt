@@ -1,0 +1,4 @@
+You chose: rock
+Computer chose: rock
+Result: It's a tie!
+----------------------
